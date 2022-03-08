@@ -33,6 +33,7 @@ public class EditTest extends BaseTodoLy {
         Thread.sleep(2000);
         editModal.nameTextBox.clearSetText(newUserName);
         editModal.okButton.click();
+        editModal.settingsButton.click();
         Thread.sleep(3000);
         Assertions.assertEquals(editModal.nameTextBox.getTextAttributeControl("value"), newUserName,"ERROR, no se modifico el nombre.");
     }

@@ -48,7 +48,7 @@ public class CRUDTest extends BaseTodoLy {
         crudModal.projectDeleteButton.click();
         Thread.sleep(2000);
         crudModal.alertControl.alertAccept();
-        Thread.sleep(7000);
+        Thread.sleep(5000);
         Assertions.assertNotEquals(crudModal.projectVerifyNameControl.getTextControl(), crudModal.newNameProj, "ERROR, no se pudo eliminar el proyecto.");
     }
 }

@@ -19,6 +19,7 @@ public class EditTest extends BaseTodoLy {
     String password = "Santiago900";
     DateTimeFormatter dt = DateTimeFormatter.ofPattern("HH:mm:ss");
     String newUserName = "Santiago" + dt.format(LocalDateTime.now());
+    String attr =  "value";
 
     @Test
     public void verifyEditUserNameTodoLy() throws InterruptedException {
@@ -35,6 +36,6 @@ public class EditTest extends BaseTodoLy {
         editModal.okButton.click();
         editModal.settingsButton.click();
         Thread.sleep(3000);
-        Assertions.assertEquals(editModal.nameTextBox.getTextAttributeControl("value"), newUserName,"ERROR, no se modifico el nombre.");
+        Assertions.assertEquals(editModal.nameTextBox.getTextAttributeControl(attr), newUserName,"ERROR, no se modifico el nombre.");
     }
 }

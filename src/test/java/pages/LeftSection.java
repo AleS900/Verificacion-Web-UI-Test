@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 import java.util.Date;
 
-public class CRUDModal {
+public class LeftSection {
     // Create
     public String nameProj="UPB"+new Date().getTime();
     public Button addButton = new Button(By.xpath("//td[text()='Add New Project']"));
